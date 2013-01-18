@@ -65,3 +65,4 @@ alias hideSpot="sudo chmod 600 /System/Library/CoreServices/Search.bundle/Conten
 alias showSpot="sudo chmod 755 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search;killall SystemUIServer"
 alias py="python"
 alias slateconf="subl ~/.slate"
+alias clearDownloads="sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'"

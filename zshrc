@@ -31,8 +31,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 #export PATH="/usr/local/bin:$PATH"
-export NODE_PATH="/usr/local/lib/node_modules"
-export PATH="/Users/ryanmacg/.rbenv:/usr/local/bin:/usr/local/share/python:/Users/ryanmacg/Library/Developer/android-sdk-macosx/platform-tools:/Users/ryanmacg/Library/Developer/android-sdk-macosx/tools:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/X11/bin"
+export PATH="/Users/ryanmacg/.rbenv:/usr/local/bin:/usr/local/share/npm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/python:/Users/ryanmacg/Library/Developer/android-sdk-macosx/platform-tools:/Users/ryanmacg/Library/Developer/android-sdk-macosx/tools:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/X11/bin"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Ruby GC suited for Rails apps
@@ -66,3 +65,5 @@ alias showSpot="sudo chmod 755 /System/Library/CoreServices/Search.bundle/Conten
 alias py="python"
 alias slateconf="subl ~/.slate"
 alias clearDownloads="sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'"
+alias jtcass="ssh itadmin@172.16.0.120"
+alias jtcdeploy="ssh itadmin@172.16.0.105"

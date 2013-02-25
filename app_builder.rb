@@ -15,6 +15,7 @@ class AppBuilder < Rails::AppBuilder
     @generator.gem 'bootstrap-sass', '2.2.2.0'
     @generator.gem 'pg'
     @generator.gem 'will_paginate'
+    bundle_command('install')
     if yes? "Do you want to generate a root controller?"
       name = ask("What should it be called?").underscore
       generate :controller, "#{name} index"

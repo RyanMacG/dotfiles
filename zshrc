@@ -34,13 +34,6 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/Users/ryanmacg/.rbenv:/usr/local/bin:/usr/local/share/npm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/python:/Users/ryanmacg/Library/Developer/android-sdk-macosx/platform-tools:/Users/ryanmacg/Library/Developer/android-sdk-macosx/tools:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/X11/bin"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-# Ruby GC suited for Rails apps
-export RUBY_HEAP_MIN_SLOTS=800000
-export RUBY_HEAP_FREE_MIN=100000
-export RUBY_HEAP_SLOTS_INCREMENT=300000
-export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
-export RUBY_GC_MALLOC_LIMIT=79000000
-
 #Aliases
 alias flushdns='dscacheutil -flushcache'
 alias showfiles='defaults write com.apple.Finder AppleShowAllFiles YES;killall Finder'

@@ -25,15 +25,13 @@ ZSH_THEME="agnoster"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git brew osx gem bundler ryan npm rbenv git-flow sublime capistrano)
+plugins=(git brew osx gem bundler rbenv ryan npm git-flow sublime capistrano)
 
 source $ZSH/oh-my-zsh.sh
-
 # Customize to your needs...
 #export PATH="/usr/local/bin:$PATH"
-export PATH="/Users/ryanmacg/.rbenv:/usr/local/bin:/usr/local/share/npm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/python:/Users/ryanmacg/Library/Developer/android-sdk-macosx/platform-tools:/Users/ryanmacg/Library/Developer/android-sdk-macosx/tools:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/X11/bin"
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
+export PATH="$HOME/.rbenv/bin:/usr/local/bin:/usr/local/share/npm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/python:/Users/ryanmacg/Library/Developer/android-sdk-macosx/platform-tools:/Users/ryanmacg/Library/Developer/android-sdk-macosx/tools:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/X11/bin"
+eval "$(rbenv init -)"
 #Aliases
 alias flushdns='dscacheutil -flushcache'
 alias showfiles='defaults write com.apple.Finder AppleShowAllFiles YES;killall Finder'

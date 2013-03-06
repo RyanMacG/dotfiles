@@ -6,6 +6,7 @@ class AppBuilder < Rails::AppBuilder
   def test
     @generator.gem 'rspec-rails', group: [:test, :development]
     @generator.gem 'annotate', '~> 2.4.1.beta',group: [:test, :development]
+    @generator.gem 'pry-rails', group: :development
     at_exit do
       generate 'rspec:install'
     end
